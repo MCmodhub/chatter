@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRC Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="chat-box">
+        <!-- Username input and button -->
+        <input type="text" id="username-input" placeholder="Enter your username...">
+        <button onclick="setUsername()">Set Username</button>
+
+        <!-- Message input and send button -->
+        <input type="text" id="message-input" placeholder="Type your message..." disabled>
+        <button onclick="handleSendMessage()" disabled>Send</button>
+
+        <!-- Messages display -->
+        <div id="messages"></div>
+
+        <!-- User Actions: Login and Register buttons -->
+        <div id="user-actions">
+            <button onclick="window.location.href='login/login.html'">Login</button>
+            <button onclick="window.location.href='register/register.html'">Register</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
